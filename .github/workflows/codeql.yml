@@ -67,7 +67,7 @@ jobs:
         languages: ${{ matrix.language }}
         build-mode: ${{ matrix.build-mode }}
         config: | 
-          paths-ignore
+          paths-ignore:
           - "**/wwwroot/lib/**"
         # If you wish to specify custom queries, you can do so here or in a config file.
         # By default, queries listed here will override any specified in a config file.

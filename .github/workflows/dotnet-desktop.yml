@@ -19,7 +19,7 @@ jobs:
       with:
         fetch-depth: 0
 
-    # Execute all unit tests in the solution
+    # Execute restore as component detection needs to walk the projects.assets.json : https://github.com/microsoft/component-detection/blob/main/docs/detectors/nuget.md
     - name: Execute restore
       run: dotnet restore src/ReadingTime6.sln
 
